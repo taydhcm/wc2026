@@ -136,18 +136,22 @@
 wc2026-edge-kelly/
 ├── main.py
 ├── config/
-├── data/ (raw + processed + sqlite)
+│   └── settings.py
+├── data/
 ├── modules/
-│   ├── data_collector/
-│   ├── feature_engineering/
-│   ├── model/
-│   ├── polymarket/
-│   ├── edge_calculator/
-│   ├── kelly/
-│   └── notifier/
+│   ├── data_collector.py
+│   ├── feature_engineering.py
+│   ├── model.py
+│   ├── polymarket.py
+│   ├── edge_calculator.py
+│   ├── kelly.py
+│   └── notifier.py
 ├── utils/
+│   ├── logger.py
+│   ├── cache.py
+│   └── timer.py
 ├── logs/
-└── notebooks/ (experiment)
+└── tests/
     </pre>
   </section>
 
